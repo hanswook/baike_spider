@@ -1,4 +1,7 @@
-from baike_spider import html_outputer, html_parser, html_downloader, url_manager
+import html_downloader
+import html_outputer
+import html_parser
+import url_manager
 
 
 class SpiderMain(object):
@@ -22,7 +25,7 @@ class SpiderMain(object):
 				self.urls.add_new_urls(new_urls)
 				self.outputer.collect_data(new_data)
 
-				if count >= 5:
+				if count >= 15:
 					break
 
 				count =count+ 1
